@@ -1,0 +1,31 @@
+<h1>Editing Guest Post #<%= @guest_post.id %></h1>
+
+
+<%= form_tag(guest_post_url(@guest_post), method: 'put') do %>
+
+  <div>
+    <%= label_tag :comment %><br />
+    <%= text_area_tag :comment, @guest_post.comment %>
+  </div>
+
+  <div>
+    <%= label_tag :created_at %><br />
+    <%= datetime.select_tag :created_at, @guest_post.created_at %>
+  </div>
+
+  <div>
+    <%= label_tag :user_id %><br />
+    <%= number_field_tag :user_id, @guest_post.user_id %>
+  </div>
+
+  <div>
+    <%= label_tag :person_id %><br />
+    <%= number_field_tag :person_id, @guest_post.person_id %>
+  </div>
+
+
+  <div>
+    <%= submit_tag "Update Guest Post" %>
+  </div>
+
+<% end %>

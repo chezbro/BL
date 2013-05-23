@@ -1,0 +1,21 @@
+<h1>Editing Trait #<%= @trait.id %></h1>
+
+
+<%= form_tag(trait_url(@trait), method: 'put') do %>
+
+  <div>
+    <%= label_tag :person_id %><br />
+    <%= number_field_tag :person_id, @trait.person_id %>
+  </div>
+
+  <div>
+    <%= label_tag :trait_type_id %><br />
+    <%= number_field_tag :trait_type_id, @trait.trait_type_id %>
+  </div>
+
+  
+  <div>
+    <%= submit_tag "Update Trait" %>
+  </div>
+
+<% end %>

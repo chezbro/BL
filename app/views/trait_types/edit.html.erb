@@ -1,0 +1,26 @@
+<h1>Editing Trait Type #<%= @trait_type.id %></h1>
+
+
+<%= form_tag(trait_type_url(@trait_type), method: 'put') do %>
+
+  <div>
+    <%= label_tag :name %><br />
+    <%= text_field_tag :name, @trait_type.name %>
+  </div>
+
+  <div>
+    <%= label_tag :image_url%><br />
+    <%= text_field_tag :image_url, @trait_type.image %>
+  </div>
+
+  <div>
+    <%= label_tag :description %><br />
+    <%= text_field_tag :description, @trait_type.description %>
+  </div>
+
+
+  <div>
+    <%= submit_tag "Update Trait Type" %>
+  </div>
+
+<% end %>

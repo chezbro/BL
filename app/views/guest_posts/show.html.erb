@@ -1,0 +1,24 @@
+<h1>Guest Post #<%= @guest_post.id %></h1>
+
+<%= @guest_post.user.first_name %>
+<p>
+  <b>Comment:</b>
+  <%= @guest_post.comment %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @guest_post.created_at %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @guest_post.user.first_name %> <%= @guest_post.user.last_name %>
+</p>
+
+<p>
+  <b>Person:</b>
+  <%= @guest_post.person.full_name%>
+</p>
+
+

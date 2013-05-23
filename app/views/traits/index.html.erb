@@ -1,0 +1,30 @@
+<h1>Traits</h1>
+
+<p><%= link_to 'Add a New Trait', new_trait_url %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Person</th>
+      <th>Trait type</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @traits.each do |trait| %>
+    <tr>
+      <td><%= trait.person.full_name %></td>
+      <td><%= trait.trait_type.try(:name) %></td>
+
+      <td><%= link_to 'Show', trait_url(trait) %></td>
+      <td><%= link_to 'Edit', edit_trait_url(trait) %></td>
+      <td><%= link_to 'Destroy', trait_url(trait), method: 'delete', data: { confirm: "Do you really want to delete this trait?" } %></td>
+
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

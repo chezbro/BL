@@ -1,0 +1,34 @@
+<h1>Guest posts</h1>
+
+<p><%= link_to 'Add a New Guest Post', new_guest_post_url %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Comment</th>
+      <th>Created at</th>
+      <th>User</th>
+      <th>Person</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @guest_posts.each do |guest_post| %>
+    <tr>
+      <td><%= guest_post.comment %></td>
+      <td><%= guest_post.created_at %></td>
+      <td><%= guest_post.user_id %></td>
+      <td><%= guest_post.person_id %></td>
+
+      <td><%= link_to 'Show', guest_post_url(guest_post) %></td>
+      <td><%= link_to 'Edit', edit_guest_post_url(guest_post) %></td>
+      <td><%= link_to 'Destroy', guest_post_url(guest_post), method: 'delete', data: { confirm: "Do you really want to delete this guest_post?" } %></td>
+
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

@@ -1,0 +1,13 @@
+<h1>Trait #<%= @trait.id %></h1>
+
+<p>
+  <b>Person:</b>
+  <%= @trait.person.full_name %>
+</p>
+
+<p>
+  <b>Trait type:</b>
+  <%= @trait.trait_type.try(:name) %>
+</p>
+
+

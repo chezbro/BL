@@ -1,0 +1,31 @@
+<h1>New Guest Post</h1>
+
+
+<%= form_tag(guest_posts_url, method: 'post') do %>
+
+
+  <div>
+    <%= label_tag :comment %><br />
+    <%= text_area_tag :comment %>
+  </div>
+
+    <div>
+    <%= label_tag :created_at %><br />
+    <%= date_select(:created_at, Time.now) %>
+  </div>
+
+    <div>
+    <%= label_tag :user_id %><br />
+    <%= number_field_tag :user_id %>
+  </div>
+
+    <div>
+    <%= label_tag :person_id %><br />
+    <%= number_field_tag :person_id %>
+  </div>
+
+
+  <div>
+    <%= submit_tag "Create Guest Post" %>
+  </div>
+<% end %>

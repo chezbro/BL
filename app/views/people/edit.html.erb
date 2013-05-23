@@ -1,0 +1,36 @@
+<h1>Editing <%= @person.full_name %></h1>
+
+
+<%= form_tag(person_url(@person), method: 'put') do %>
+
+  <div>
+    <%= label_tag :dob %><br />
+    <%= number_field_tag :dob, @person.dob %>
+  </div>
+
+  <div>
+    <%= label_tag :dod %><br />
+    <%= number_field_tag :dod, @person.dod %>
+  </div>
+
+  <div>
+    <%= label_tag :eulogy %><br />
+    <%= text_area_tag :eulogy, @person.eulogy %>
+  </div>
+
+  <div>
+    <%= label_tag :photo_url %><br />
+    <%= image_field_tag :photo_url, @person.photo_url %>
+  </div>
+
+  <div>
+    <%= label_tag :charity %><br />
+    <%= text_field_tag :charity, @person.charity %>
+  </div>
+
+
+  <div>
+    <%= submit_tag "Update Person" %>
+  </div>
+
+<% end %>
