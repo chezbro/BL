@@ -1,3 +1,82 @@
-// Place all the styles related to the Static_Pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+ width: 99%;
+ margin: 2px auto;
+ background: url('/assets/Peace.jpeg') no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+#logo {
+
+ float:left;
+ font-family: 'Lato', sans-serif;
+ font-weight: 300;
+ font-size: 34px;
+ color: #e8e5ea;
+ margin: 20px 0px 0px 20px;
+}
+
+header#page_header {
+ width: 100%;
+ margin: 4px auto;
+
+}
+header#page_header nav ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ line-height: 4.8;
+ float:right;
+}
+#page_header nav ul li {
+ display:inline;
+ margin: 0 20px 0 0;
+ padding: 1px;
+
+}
+
+#page_header nav ul li a {
+
+ font-family: 'Open Sans', sans-serif;
+ font-size: 1.0em;
+ color: #fbf9fe;
+ text-decoration: none;
+ -webkit-transition:all 275ms ease-in;
+ -o-transition:all 275ms ease-in;
+}
+
+#page_header nav ul li a:hover {
+ color:#fbf9e3;
+}
+
+#caption {
+
+
+
+}
+
+#caption > h2{
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.7em;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer#page_footer {
+ clear: both;
+ width: 100%;
+ margin: 4px auto;
+ border: 2px solid blue;
+}

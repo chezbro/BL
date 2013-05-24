@@ -11,37 +11,10 @@
  *= require_self
  *= require_tree .
  */
- body {
-  width: 99%;
-  margin: 2px auto;
-  font-family: Arial, "MS Trebuchet", sans-serif;
-  text-align: center;
-  background: url('/assets/Peace.jpeg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
- }
-
-
 
  header, footer, section, aside, nav, article { display: block; }
 
- header#page_header {
-  width: 100%;
-  margin: 4px auto;
-
- }
- header#page_header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
- }
- #page_header nav ul li {
-  display:inline;
-  margin: 0 20px 0 0;
-  padding: 1px;
- }
+/*
  section#posts {
   float: right;
   width: 79%;
@@ -87,5 +60,5 @@
   clear: both;
   width: 100%;
   margin: 4px auto;
-  border: 2px solid blue;
+  bo*/rder: 2px solid blue;
  }
