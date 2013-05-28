@@ -1,0 +1,152 @@
+
+body {
+	background: url('/assets/path.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
+
+}
+
+.missionbg
+{
+	background: url('/assets/Peace.jpeg') no-repeat center center fixed;>
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+.missionbg h1 {
+	font-weight:300;
+	margin-top:350px;
+	text-align:center;
+	font-size: 2.3em;
+
+}
+.missiontxt {
+
+	font-weight:300;
+	text-align:center;
+	font-size: 1.3em;
+}
+
+#wrapper {
+ width: 99%;
+ margin: 2px auto;
+
+}
+
+#logo {
+
+ float:left;
+ font-family: 'Lato', sans-serif;
+ font-weight: 300;
+ font-size: 34px;
+ color: #e8e5ea;
+ margin: 20px 0px 0px 20px;
+}
+
+#logo a {
+
+	color: #fbf9fe;
+	text-decoration: none;
+
+}
+
+header#page_header {
+ width: 100%;
+ margin: 4px auto;
+
+}
+.navlist {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ line-height: 4.8;
+ float:right;
+}
+#page_header nav ul li {
+ display:inline;
+ margin: 0 20px 0 0;
+ padding: 1px;
+
+}
+
+#page_header nav ul li a {
+
+ font-family: 'Open Sans', sans-serif;
+ font-weight: 300;
+ font-size: 1.16em;
+ color: #fbf9fe;
+ text-decoration: none;
+ -webkit-transition:all 275ms ease-in;
+ -o-transition:all 275ms ease-in;
+ opacity: 0.9;
+}
+
+#page_header nav ul li a:hover {
+ color:#a3a3a7;
+ opacity: 0.8;
+}
+
+h2.caption {
+
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 3.6em;
+	color: #fff;
+	position:absolute;
+	top:28%;
+	width:650%;
+	margin-left: 34%;
+}
+
+h3.caption2 {
+
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 2.1em;
+	color: #fff;
+	position:absolute;
+	top: 34%;
+	width:650%;
+	margin-left: 38%;
+
+}
+
+h4.caption3 {
+
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: .7em;
+	color: #fff;
+	position:absolute;
+	top: 46.5%;
+	width:650%;
+	margin-left: 35%;
+
+}
+
+.fb-button {
+	margin-left:42%;
+	position: absolute;
+	top:41.5%;
+	padding:0;
+	border:0;
+
+}
+.fb-button:hover
+
+{
+
+
+}
+
+footer#page_footer {
+ clear: both;
+ width: 100%;
+ margin: 4px auto;
+ border: 2px solid blue;
+}

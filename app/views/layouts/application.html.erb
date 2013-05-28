@@ -4,11 +4,29 @@
   <title>BeyondLife</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-  <%= stylesheet_link_tag params[:static_pages] %>
-  <%= javascript_include_tag params[:static_pages] %>
   <%= csrf_meta_tags %>
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
+	<div id="wrapper" class="row">
+		<header id="page_header" class="span12" >
+			<h1 id="logo">
+				<%= link_to "BeyondLife", root_url %>
+			</h1>
+				<nav>
+					<ul class="navlist">
+						<% unless signed_in?   %>
+						<li><%= link_to "Sign in via Facebook", "/auth/facebook"%></li>
+						<% end %>
+						<li><%= link_to "Join", new_user_url %></li>
+						<li><%= link_to "Commemorate +", people_url %></li>
+						<li><%= link_to "Our Mission", mission_url %></li>
+						<% if signed_in? %>
+						<li><%= link_to "Sign Out", signout_url, method: 'delete'%></li>
+						<% end %>
+					</ul>
+				</nav>
+		</header>
 <%= yield %>
+
 </html>

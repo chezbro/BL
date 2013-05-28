@@ -5,9 +5,18 @@ BeyondLifeMe::Application.routes.draw do
 
   # Session routes
   get '/signin' => 'sessions#new', :as => 'signin'
-  post '/sessions/new' => 'sessions#create', :as => 'sessions'
+  post '/sessions' => 'sessions#create', :as => 'sessions'
   delete '/signout' => 'sessions#destroy', :as => 'signout'
 
+  # OmniAuth for FB
+
+  match 'auth/facebook/callback', to: 'sessions#create'
+  match 'auth/failure', to: redirect('/')
+
+
+  # Mission Static Page
+
+  match '/mission' => "static_pages#mission", :as => 'mission'
 
   # Routes for the Guest_post resource:
   # CREATE

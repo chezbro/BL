@@ -1,27 +1,12 @@
-<body>
-	<div class="container">
-	<header id="page_header">
-		<h1 id="logo">
-			BeyondLife
-		</h1>
-			<nav>
-				<ul>
-					<li><%= link_to "Sign In", signin_url%></li>
-					<li><%= link_to "Sign Up", "#" %></li>
-					<li><%= link_to "Commemorate +", "#" %></li>
-					<li><%= link_to "Mission", "#" %></li>
-				</ul>
-			</nav>
-	</header>
-
-	<div id="caption">
-<!-- 		<h2>Gone, but not forgotten.</h2> -->
+		<div class="row">
+			<h2 class="caption span12">Gone, but not forgotten.</h2>
+			<h3 class="caption2 span12">Commemorate your loved ones.</h3>
+			<%= link_to(image_tag("/assets/fb-button.jpg", :class => "fb-button"),'/auth/facebook') %>
+			<h4 class="caption3 span12">Facebook provides legitimacy and credibility, we believe this is important when Commemorating your loved ones.</h4>
+		</div>
 	</div>
-
-	</div>
-<footer></footer>
-
 </body>
+<footer></footer>
 </html>
 
 

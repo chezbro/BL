@@ -13,10 +13,12 @@ class UsersController < ApplicationController
   end
 
   def create
+    # (params[:user])
     @user = User.new
+    @user = User.find_by_id(params[:id])
     @user.first_name = params[:first_name]
     @user.last_name = params[:last_name]
-    @user.full_name = params[:full_name]
+    # @user.full_name = params[:full_name]
     @user.email = params[:email]
     @user.uid = params[:uid]
     @user.access_token = params[:access_token]
@@ -25,7 +27,7 @@ class UsersController < ApplicationController
 
     if @user.save
             session[:user_id] = @user.id
-            redirect_to users_url
+            redirect_to user_url(@user)
           else
       render 'new'
     end
