@@ -32,6 +32,27 @@ body {
 	font-size: 1.3em;
 }
 
+
+.joinbg
+{
+	background: url('/assets/trees.JPG') no-repeat center center fixed;>
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+.commemorate {
+
+	background: url('/assets/green.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
 #wrapper {
  width: 99%;
  margin: 2px auto;
