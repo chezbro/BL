@@ -9,11 +9,10 @@
  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,700italic' rel='stylesheet' type='text/css'>
 </head>
-
-	<div id="wrapper" class="row">
+	<div id="wrapper">
 		<nav>
 			<div id="logo">
-				<%= image_tag("/assets/BL.png") %>
+				<%= link_to image_tag("/assets/BL.png"), root_url %>
 			</div>
 			<ul>
 				<% unless signed_in? %>

@@ -21,6 +21,7 @@ body {
 
 
 }
+h1 {margin: 0px;}
 
 nav {
 
@@ -75,15 +76,24 @@ nav ul li {
 
 }
 
-
 nav ul li a {
 
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
 	color:#eee8e7;
 	font-size:.97em;
+	text-decoration: none;
+	-webkit-transition:all 275ms ease-in;
+	-o-transition:all 275ms ease-in;
+	opacity: 0.9;
 }
 
+nav ul li a:hover {
+ color:#585554;
+ opacity: 0.8;
+ text-decoration: none;
+
+}
 
 /**********		Homepage	**********/
 
@@ -91,7 +101,7 @@ nav ul li a {
 section.homepage {
 	height:1200px;
 	width:100%;
-	margin-top: 56px;
+	top:90px;
 	position: relative;
 
 }
@@ -101,7 +111,7 @@ section.homepage {
 	width: 100%;
 	height: 1000px;
 	position: fixed;
-	margin-top: 10px;
+	margin-top: 65px;
 }
 
 .homepage div#ribbon img {
@@ -109,9 +119,9 @@ section.homepage {
 	display: block;
 	margin: 0 auto;
 	position: relative;
-	top: -131px;
+	top: -171px;
 }
-div#ribbon .ribbon-content h1{
+section.homepage h1{
 
 	color: #7f7c7c;
 	font-family:'Raleway (TT)';
@@ -126,7 +136,7 @@ div#ribbon .ribbon-content h1{
 }
 
 
-.homepage h2 {
+section.homepage h2 {
 
 	text-align: center;
 	font-weight: 100;
@@ -136,6 +146,20 @@ div#ribbon .ribbon-content h1{
 	position: relative;
 	top: 90px;
 	margin: 0 auto;
+	z-index: 1000;
+}
+
+section.homepage h3{
+
+	text-align: center;
+	font-weight: 100;
+	font-family: 'Lato';
+	font-size:.91em;
+	color: #4c5e7c;
+	position: relative;
+	top: 375px;
+	margin: 0 auto;
+	z-index: 1000;
 }
 
 div#ribbon .ribbon-content .fb-button img {
