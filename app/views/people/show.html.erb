@@ -1,19 +1,13 @@
-
-<div style="background:lightblue;"
 <h1><%= @person.full_name%></h1>
 
 <p>
-  <b>Full Name:</b>
-  <%= @person.full_name %>
-</p>
-<p>
   <b>Dob:</b>
-  <%= @person.dob.strftime("~%D~") %>
+  <%= @person.dob %>
 </p>
-
+<!-- .strftime("~%D~") -->
 <p>
   <b>Dod:</b>
-  <%= @person.dod.strftime("~%D~") %>
+  <%= @person.dod %>
 </p>
 
 <p>
@@ -22,14 +16,20 @@
 </p>
 
 <p>
-  <b>Photo:</b>
-  <%= image_tag @person.photo_url %>
+  <b>Quote</b>
+  <%= @person.quote%>
 </p>
 
 <p>
   <b>Charity:</b>
   <%= @person.charity %>
 </p>
+
+<p>
+  <b>Photo:</b>
+  <%= image_tag @person.photo_url %>
+</p>
+
 
 
 </div>

@@ -3,8 +3,8 @@ class User < ActiveRecord::Base
 	has_many :people
 	has_many :guest_posts
 
-	# has_secure_password
-	# validates :password, :presence => true, :on => :create
+	has_secure_password
+	validates :password, :presence => true, :on => :create
 
 	validates :email, :presence => true
 	validates :email, :uniqueness => true

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130523195512) do
+ActiveRecord::Schema.define(:version => 20130601182734) do
 
   create_table "guest_posts", :force => true do |t|
     t.text     "comment"
@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(:version => 20130523195512) do
     t.text     "eulogy"
     t.string   "photo_url"
     t.string   "charity"
+    t.string   "quote"
+    t.string   "survived_by"
   end
 
   create_table "trait_types", :force => true do |t|

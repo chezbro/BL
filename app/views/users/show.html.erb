@@ -1,4 +1,4 @@
-<h1>User #<%= @user.id %></h1>
+<h1><%= @user.first_name.capitalize %> <%= @user.last_name.capitalize %></h1>
 
 <p>
   <b>First name:</b>
@@ -11,28 +11,25 @@
 </p>
 
 <p>
-  <b>Full name:</b>
-  <%= @user.full_name %>
-</p>
-
-<p>
   <b>Email:</b>
   <%= @user.email %>
 </p>
 
-<p>
+<!-- Not needed right now, needed for FB connect -->
+
+<!-- <p>
   <b>Uid:</b>
-  <%= @user.uid %>
+  <#%= @user.uid %>
 </p>
 
 <p>
   <b>Access token:</b>
-  <%= @user.access_token %>
+  <#%= @user.access_token %>
 </p>
 
 <p>
   <b>Provider:</b>
-  <%= @user.provider %>
+  <#%= @user.provider %>
 </p>
-
+ -->
 

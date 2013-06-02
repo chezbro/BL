@@ -14,16 +14,17 @@ class UsersController < ApplicationController
 
   def create
     # (params[:user])
-    @user = User.new
-    @user = User.find_by_id(params[:id])
-    @user.first_name = params[:first_name]
-    @user.last_name = params[:last_name]
-    # @user.full_name = params[:full_name]
-    @user.email = params[:email]
-    @user.uid = params[:uid]
-    @user.access_token = params[:access_token]
-    @user.provider = params[:provider]
-    @user.password = params[:password]
+    # @user = User.new
+    # @user = User.find_by_id(params[:id])
+    # @user.first_name = params[:first_name]
+    # @user.last_name = params[:last_name]
+    # # @user.full_name = params[:full_name]
+    # @user.email = params[:email]
+    # @user.uid = params[:uid]
+    # @user.access_token = params[:access_token]
+    # @user.provider = params[:provider]
+    # @user.password = params[:password]
+    @user = User.new(params[:user])
 
     if @user.save
             session[:user_id] = @user.id

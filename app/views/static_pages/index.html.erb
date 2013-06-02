@@ -1,17 +1,16 @@
-		<div class="row">
-			<h2 class="caption span12">Gone, but not forgotten.</h2>
-			<h3 class="caption2 span12">Commemorate your loved ones.</h3>
-			<%= link_to(image_tag("/assets/fb-button.jpg", :class => "fb-button"),'/auth/facebook') %>
-			<h4 class="caption3 span12">Facebook provides legitimacy and credibility, we believe this is important when Commemorating your loved ones.</h4>
+	<section class="homepage">
+		<div id="ribbon">
+			<img src="/assets/banner-container.png">
+			<h1>Gone, but not forgotten</h1>
 		</div>
-	</div>
-</body>
-<footer></footer>
-</html>
-
-
-
-
+		<h2>How will you be remembered?</h2>
+		<% unless signed_in? %>
+		<div class="fb-button">
+		<span><img src="/assets/FB.png"></span>
+		</div>
+		<% end %>
+	</section>
+</div>
 
 <!-- <div>
 	<%# if signed_in? %>
