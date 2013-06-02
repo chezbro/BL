@@ -1,4 +1,5 @@
-/*Entire Application */
+
+/**********	Entire Application	**********/
 
 body {
 	/*background: url('/assets/path.png') no-repeat center center fixed;
@@ -8,6 +9,8 @@ body {
 	background-size: cover;
 	color: white;*/
 	background-color: #f4f1f0;
+	margin: 0px, auto
+
 }
 
 #wrapper {
@@ -81,10 +84,12 @@ nav ul li a {
 	font-size:.97em;
 }
 
-/*Homepage*/
+
+/**********		Homepage	**********/
+
 
 section.homepage {
-	height:300px;
+	height:1200px;
 	width:100%;
 	margin-top: 56px;
 	position: relative;
@@ -93,60 +98,59 @@ section.homepage {
 
 .homepage div#ribbon {
 	background-repeat: no-repeat;
-	width: 830px;
-	height: 645px;
-	margin:30px auto 0px auto;
+	width: 100%;
+	height: 1000px;
+	position: fixed;
+	margin-top: 10px;
 }
 
+.homepage div#ribbon img {
 
-
-.homepage div#ribbon h1{
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: -131px;
+}
+div#ribbon .ribbon-content h1{
 
 	color: #7f7c7c;
 	font-family:'Raleway (TT)';
 	font-weight:100;
 	font-size:2.950em;
 	text-align: center;
-	padding-top: 35px;
+	z-index: 1000;
+	top: 26px;
+	position: relative;
+	margin: auto auto;
 
 }
+
 
 .homepage h2 {
 
 	text-align: center;
 	font-weight: 100;
 	font-family: 'Lato';
-	font-size:1.500em;
+	font-size:1.5500em;
 	color: #77716e;
-	margin-top: -50px;
+	position: relative;
+	top: 90px;
+	margin: 0 auto;
 }
 
-section.homepage div.fb-button {
+div#ribbon .ribbon-content .fb-button img {
 
-	width:240px;
-	height:50px;
-	margin:0 auto;
-}
+	position: relative;
+	top: 380px;
+	z-index: 1000;
 
-
-/*Show (People) Page*/
+/***********	Show (People) page 		***********/
 
 
-/*Commemorate Page*/
+/***********	Commemorate page 		***********/
 
 
-/*Mission*/
-
-
-
-
-
-
-
-
-
-
-
+/***********	Mission		***********/
 
 
 

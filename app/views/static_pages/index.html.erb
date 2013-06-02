@@ -1,16 +1,18 @@
-	<section class="homepage">
-		<div id="ribbon">
-			<img src="/assets/banner-container.png">
+
+<section class="homepage">
+	<div id="ribbon">
+		<div class="ribbon-content">
 			<h1>Gone, but not forgotten</h1>
-		</div>
-		<h2>How will you be remembered?</h2>
-		<% unless signed_in? %>
+			<h2>How will you be remembered?</h2>
 		<div class="fb-button">
-		<span><img src="/assets/FB.png"></span>
+			<img src="/assets/FB.png">
 		</div>
-		<% end %>
-	</section>
-</div>
+		<img src="/assets/banner-container.png">
+		<% unless signed_in? %>
+	</div>
+	<% end %>
+</section>
+
 
 <!-- <div>
 	<%# if signed_in? %>
