@@ -8,10 +8,11 @@ BeyondLifeMe::Application.routes.draw do
   post '/sessions' => 'sessions#create', :as => 'sessions'
   delete '/signout' => 'sessions#destroy', :as => 'signout'
 
-  # OmniAuth for FB
+  #OmniAuth for FB
 
-  match 'auth/facebook/callback', to: 'sessions#create'
+  match 'auth/facebook', to: 'sessions#create'
   match 'auth/failure', to: redirect('/')
+
 
 
   # Mission Static Page

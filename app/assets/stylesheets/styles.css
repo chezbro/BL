@@ -101,7 +101,7 @@ nav ul li a:hover {
 section.homepage {
 	height:1200px;
 	width:100%;
-	top:90px;
+	top:70px;
 	position: relative;
 
 }
@@ -111,7 +111,7 @@ section.homepage {
 	width: 100%;
 	height: 1000px;
 	position: fixed;
-	margin-top: 65px;
+	top: 105px;
 }
 
 .homepage div#ribbon img {
@@ -119,7 +119,7 @@ section.homepage {
 	display: block;
 	margin: 0 auto;
 	position: relative;
-	top: -171px;
+	top: -200px;
 }
 section.homepage h1{
 
@@ -157,7 +157,7 @@ section.homepage h3{
 	font-size:.91em;
 	color: #4c5e7c;
 	position: relative;
-	top: 375px;
+	top: 360px;
 	margin: 0 auto;
 	z-index: 1000;
 }
@@ -165,7 +165,7 @@ section.homepage h3{
 div#ribbon .ribbon-content .fb-button img {
 
 	position: relative;
-	top: 380px;
+	top: 365px;
 	z-index: 1000;
 
 /***********	Show (People) page 		***********/
