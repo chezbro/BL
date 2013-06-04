@@ -1,36 +1,16 @@
-<h1><%= @person.full_name%></h1>
-
-<p>
-  <b>Dob:</b>
-  <%= @person.dob %>
-</p>
-<!-- .strftime("~%D~") -->
-<p>
-  <b>Dod:</b>
-  <%= @person.dod %>
-</p>
-
-<p>
-  <b>Eulogy:</b>
-  <%= @person.eulogy %>
-</p>
-
-<p>
-  <b>Quote</b>
-  <%= @person.quote%>
-</p>
-
-<p>
-  <b>Charity:</b>
-  <%= @person.charity %>
-</p>
-
-<p>
-  <b>Photo:</b>
-  <%= image_tag @person.photo_url %>
-</p>
-
-
-
+<div id="show-wrapper">
+  <div id="show-container">
+    <div class="name">
+      <h1><%= @person.full_name %></h1>
+      <h2>
+        <span class="dates dob">Mar.11</span>
+        1973&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="dates bornin">Detroit, MI</span>~&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2012
+        <span class="dates dod">Feb.27</span><span class="dates diedin">Los Angeles, CA</span></h2>
+    </div>
+    <div id="show-image">
+        <%= image_tag(@person.photo_url)%>
+    </div>
+  </div>
 </div>
-</body>
+
+

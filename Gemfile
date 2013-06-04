@@ -8,6 +8,7 @@ gem 'omniauth-facebook'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'dotenv-rails'
 gem 'better_errors'
 
 
@@ -24,6 +25,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
 
 
 

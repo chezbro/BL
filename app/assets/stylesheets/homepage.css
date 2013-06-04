@@ -1,0 +1,78 @@
+
+/**********		Homepage	**********/
+
+
+section.homepage {
+	height:100%;
+	width:100%;
+	position: relative;
+
+
+}
+
+.homepage div#ribbon {
+	background: url("/assets/banner-container.png");
+	background-repeat: no-repeat;
+	width: 870px;
+	height: 640px;
+	margin: 0 auto;
+
+}
+
+.homepage div.ribbon-content {
+
+	height:596px;
+	width: 535px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+h1.forgotten {
+
+	color: #7f7c7c;
+	font-family:'Raleway (TT)';
+	font-weight:100;
+	font-size:2.950em;
+	margin: auto;
+	line-height: 115px;
+
+}
+
+h2.remembered {
+
+	font-weight: 100;
+	font-family: 'Lato';
+	font-size:1.5500em;
+	color: #77716e;
+
+}
+h3.terms{
+
+	font-weight: 100;
+	font-family: 'Lato';
+	font-size:.91em;
+	color: #4c5e7c;
+	margin:0px;
+}
+
+#fb-button {
+
+
+	margin-top: 300px;
+	height: 55px;
+
+}
+
+#fb-button img {
+
+	opacity: 1;
+
+}
+
+#fb-button img:hover {
+
+	opacity: 0.93;
+}
+

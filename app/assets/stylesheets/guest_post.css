@@ -1,0 +1,6 @@
+div#post {
+
+	position: relative;
+	top:90px;
+	border: 1px solid teal;
+}

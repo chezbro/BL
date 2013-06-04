@@ -8,8 +8,10 @@ class Person < ActiveRecord::Base
 	#Validations
 
 	# validates_presence_of :full_name, :dob, :dob, :eulogy, :photo_url
-	validates :eulogy, :length => { :maximum => 1000,
+
+	validates :eulogy, :length => { :maximum => 1500,
     :too_long => "%{count} characters is the maximum length for a Eulogy" }
-    validates :eulogy, :length => { :minimum => 50,
+
+    validates :eulogy, :length => { :minimum => 0,
         :too_short => "%{count} characters is the minimum length for a Eulogy" }
 end

@@ -1,8 +1,20 @@
-<h1><%= @user.first_name.capitalize %> <%= @user.last_name.capitalize %></h1>
+<!-- Edit this later, this is solely to display it on the screen -->
+<style>
+  div#display {
+
+    position: relative;
+    top: 200px;
+    left: 350px;
+  }
+</style>
+
+
+<div id="display">
+<h1><%= @user.first_name %> <%= @user.last_name %></h1>
 
 <p>
   <b>First name:</b>
-  <%= @user.first_name %>
+  <%= @user.full_name %>
 </p>
 
 <p>
@@ -14,7 +26,11 @@
   <b>Email:</b>
   <%= @user.email %>
 </p>
-
+<p>
+  <b>Photo:</b>
+  <%= image_tag "http://graph.facebook.com/#{@user.uid}/picture?type=large" %>
+</p>
+</div>
 <!-- Not needed right now, needed for FB connect -->
 
 <!-- <p>

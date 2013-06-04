@@ -958,7 +958,7 @@
           var doAnimate = $.support.transition && animate
 
           this.$backdrop = $('<div class="modal-backdrop ' + animate + '" />')
-            .appendTo(document.body)
+            .appendTo(document.modal-body)
 
           this.$backdrop.click(
             this.options.backdrop == 'static' ?

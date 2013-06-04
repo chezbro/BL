@@ -1,43 +1,44 @@
 <%= form_for(@person) do |f| %>
-  <div>
-    <% if @person.errors.any? %>
-    <ul style="list-style:none">
-      <% @person.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    </ul>
+<div id="form">
+      <% if @person.errors.any? %>
+      <ul style="list-style:none">
+        <% @person.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+       <% end %>
+     </ul>
+
     <% end %>
-  </div>
-  <% end %>
-
-  <div>
-    <%= f.text_field :full_name, label: "full_name", placeholder: "Please enter a full name" %>
-  </div> <br>
-
-  <div>
+  <section>
+    <ul>
+      <li><%= f.text_field :full_name, label: "full_name", placeholder: "Please enter a full name" %></li>
+      <li>
     <%= f.text_field :survived_by, label: "survived_by", placeholder: "Survived by" %>
-  </div><br>
+      </li>
 
-  <div>
+      <li>
     <%= f.text_field :dob, label: "dob", placeholder: "Date of Birth"  %><br />
-  </div>
+      </li>
 
-  <div>
+      <li>
     <%= f.text_field :dod, label: "dod", placeholder: "Date of Passing" %>
-  </div>
+      </li>
 
-  <div>
+      <li>
     <%= f.text_area :eulogy, label: "eulogy", placeholder: "Write a Eulogy" %>
-  </div>
+      </li>
 
-  <div>
+      <li>
     <%= f.text_field :photo_url, label: "photo_url", placeholder: "Upload an image" %>
-  </div>
+      </li>
 
-  <div>
+      <li>
     <%= f.text_field :charity, label: "charity", placeholder: "Associated Charities & Organizations" %>
-  </div>
+      </li>
 
-  <div>
+      <li>
     <%= f.submit  %>
-  </div>
+      </li>
+    </ul>
+  </section>
+</div>
 <% end %>

@@ -1,73 +1,30 @@
 
 /**********	Entire Application	**********/
 
-body {
-	/*background: url('/assets/path.png') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	color: white;*/
-	background-color: #f4f1f0;
-	margin: 0px, auto
 
-}
-
-#wrapper {
- width: 100%;
- height:100%;
- margin: 0px;
- padding: 0px;
-
-
-}
-h1 {margin: 0px;}
-
-nav {
+nav.application {
 
 	height: 90px;
 	width: 100%;
 	background-color: #b8b2b0;
-	position: fixed;
-}
-
-nav div#logo {
-
-	height:56px;
-	width:240;
-	float: left;
 
 }
 
-nav div#logo img {
+#bl-logo {
 
-	margin:20px;
-}
 
-nav div#logo h1 {
-
-	font-family: 'Raleway (OT1)';
-	font-weight: 100;
-	font-size: 3.012em;
-	margin-left: 30px;
-
+	position: relative;
+	margin: 22.5px;
 
 }
 
-nav div#logo h1 a {
-
-	text-decoration: none;
-	color:#f4f1f0;
-	line-height: 135%;
-}
-
-nav ul {
+ul.navlinks {
 
 	float: right;
-	margin: 20px 10px 0px 0px;
+	margin: 22.5px 10px 0px 0px;
 }
 
-nav ul li {
+ul.navlinks li {
 
 	float:left;
 	margin-right: 11px;
@@ -76,102 +33,37 @@ nav ul li {
 
 }
 
-nav ul li a {
+ul.navlinks li a {
 
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
 	color:#eee8e7;
 	font-size:.97em;
 	text-decoration: none;
-	-webkit-transition:all 275ms ease-in;
-	-o-transition:all 275ms ease-in;
+	-webkit-transition:all 205ms ease-in;
+	-o-transition:all 205ms ease-in;
 	opacity: 0.9;
 }
 
-nav ul li a:hover {
+ul.navlinks li a:hover {
  color:#585554;
  opacity: 0.8;
  text-decoration: none;
 
 }
 
-/**********		Homepage	**********/
 
-
-section.homepage {
-	height:1200px;
-	width:100%;
-	top:70px;
-	position: relative;
-
-}
-
-.homepage div#ribbon {
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 1000px;
-	position: fixed;
-	top: 105px;
-}
-
-.homepage div#ribbon img {
-
-	display: block;
-	margin: 0 auto;
-	position: relative;
-	top: -200px;
-}
-section.homepage h1{
-
-	color: #7f7c7c;
-	font-family:'Raleway (TT)';
-	font-weight:100;
-	font-size:2.950em;
-	text-align: center;
-	z-index: 1000;
-	top: 26px;
-	position: relative;
-	margin: auto auto;
-
-}
-
-
-section.homepage h2 {
-
-	text-align: center;
-	font-weight: 100;
-	font-family: 'Lato';
-	font-size:1.5500em;
-	color: #77716e;
-	position: relative;
-	top: 90px;
-	margin: 0 auto;
-	z-index: 1000;
-}
-
-section.homepage h3{
-
-	text-align: center;
-	font-weight: 100;
-	font-family: 'Lato';
-	font-size:.91em;
-	color: #4c5e7c;
-	position: relative;
-	top: 360px;
-	margin: 0 auto;
-	z-index: 1000;
-}
-
-div#ribbon .ribbon-content .fb-button img {
-
-	position: relative;
-	top: 365px;
-	z-index: 1000;
 
 /***********	Show (People) page 		***********/
 
 
-/***********	Commemorate page 		***********/
+
+
+
+
+
+
+
 
 
 /***********	Mission		***********/

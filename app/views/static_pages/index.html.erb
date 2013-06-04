@@ -1,18 +1,14 @@
 <section class="homepage">
 	<div id="ribbon">
 		<div class="ribbon-content">
-			<h1>Gone, but not forgotten</h1>
-			<h2>How will you be remembered?</h2>
-			<div class="fb-button">
-				<img src="/assets/FB.png">
+			<h1 class="forgotten">Gone, but not forgotten</h1>
+			<h2 class="remembered">How will you be remembered?</h2>
+			<div id="fb-button">
+				<%= link_to(image_tag("/assets/FB.png"), "/auth/facebook") %>
 			</div>
-			<h3>We promise to protect your information and never post on your behalf.</h3>
-
-		<img src="/assets/banner-container.png">
-		<% unless signed_in? %>
+			<h3 class="terms">We promise to protect your information and never post on your behalf.</h3>
 		</div>
 	</div>
-	<% end %>
 </section>
 
 
