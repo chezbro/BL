@@ -1,5 +1,5 @@
 class Person < ActiveRecord::Base
-	attr_accessible :full_name, :dob, :dod, :eulogy, :photo_url, :charity, :survived_by
+	attr_accessible :full_name, :dob, :dod, :eulogy, :photo_url, :charity, :survived_by, :political_stance, :religion
 
 	belongs_to :user
 	has_many :guest_posts

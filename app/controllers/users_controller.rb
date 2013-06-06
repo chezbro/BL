@@ -1,11 +1,32 @@
 class UsersController < ApplicationController
+  before_filter :authorize_user, only: [:edit, :update, :destroy]
+  before_filter :find_user, except:[:index, :new, :create]
+  # before_filter :require_signin
+
+  # def require_signin
+  #   unless signed_in?
+  #   redirect_to login_url
+  #   end
+  # end
+
+  def authorize_user
+    @user = User.find_by_id(params[:id])
+    if current_user.id != @user.id
+      redirect_to edit_user_url(current_user.id), notice: "You don't have access to this page."
+    end
+  end
+
+  def find_user
+    @user = User.find_by_id(params[:id])
+  end
+
 
   def index
     @users = User.all
   end
 
   def show
-    @user = User.find_by_id(params[:id])
+    # Filter is running user = User.find_by_id(params[:id])
 
   end
 
@@ -25,7 +46,7 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = User.find_by_id(params[:id])
+    # Filter is running user = User.find_by_id(params[:id])
   end
 
   def update
@@ -46,7 +67,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user = User.find_by_id(params[:id])
+    # Filter is running user = User.find_by_id(params[:id])
     @user.destroy
         redirect_to users_url
       end

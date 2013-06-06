@@ -1,13 +1,16 @@
+
+
+
 <!-- Uneeded for now, perhaps when Users have Commemorated multiple people, I will open this back up, so Users can view the list of Loved ones they've Commemorated. -->
 
-<!--
+
 
 
 
 
 <h1>People</h1>
 
-<p><########%= link_to 'Add a New Person', new_person_url %></p>
+<p><%= link_to 'Add a New Person', new_person_url %></p>
 
 <table>
   <thead>
@@ -24,21 +27,20 @@
   </thead>
 
   <tbody>
-  <#########% @people.each do |person| %>
+  <% @people.each do |person| %>
     <tr>
-      <td><##########%= person.full_name %></td>
-      <td><##########%= person.dob %></td>
-      <td><##########%= person.dod %></td>
-      <td><##########%= person.eulogy %></td>
-      <td><##########%= person.charity %></td>
-##########
-      <td><##########%= link_to 'Show', person_url(person) %></td>
-      <td><##########%= link_to 'Edit', edit_person_url(person) %></td>
-      <td><##########%= link_to 'Destroy', person_url(person), method: 'delete', data: { confirm: "Do you really want to delete this person?" } %></td>
+      <td><%= person.full_name %></td>
+      <td><%= person.dob %></td>
+      <td><%= person.dod %></td>
+      <td><%= person.eulogy %></td>
+      <td><%= person.charity %></td>
+
+      <td><%= link_to 'Show', person_url(person) %></td>
+      <td><%= link_to 'Edit', edit_person_url(person) %></td>
+      <td><%= link_to 'Destroy', person_url(person), method: 'delete', data: { confirm: "Do you really want to delete this person?" } %></td>
 
     </tr>
-  <##########% end %>
+  <% end %>
   </tbody>
 </table>
 
- -->

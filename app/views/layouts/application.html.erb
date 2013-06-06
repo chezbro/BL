@@ -14,9 +14,9 @@
 			<%= link_to(image_tag("/assets/BL.png", id: "bl-logo"), root_url)  %>
 				<ul class="navlinks">
 					<% if signed_in? %>
-					<li><%= link_to "Commemorate +", people_url %></li>
+					<li><%= link_to "Commemorate +", new_person_url %></li>
 					<li><%= link_to "Our Mission", mission_url %></li>
-					<li><%= link_to current_user.full_name.capitalize, user_url(current_user.id) %></li>
+					<li><%= link_to current_user.full_name.capitalize, edit_user_url(current_user.id) %></li>
 					<li><%= link_to "Sign Out", signout_url, method: 'delete' %></li>
 					<% else %>
 					<li><%= link_to "Sign In with Facebook", "/auth/facebook" %></li>

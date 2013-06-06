@@ -1,7 +1,7 @@
 class PeopleController < ApplicationController
 
   def index
-    redirect_to new_person_url
+    @people = Person.all
   end
 
   def show
@@ -16,9 +16,9 @@ class PeopleController < ApplicationController
     @person = Person.new(params[:person])
 
     if @person.save
-            redirect_to people_url, :notice => "Thank you"
-          else
-      render 'new'
+            redirect_to person_url(@person)
+      #     else
+      # render 'new'
     end
   end
 

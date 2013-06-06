@@ -1,6 +1,6 @@
 div#show-wrapper{
 
-	border: 1px solid yellow;
+
 	margin: 0;
 	height: 100%;
 	width: 100%;
@@ -30,7 +30,8 @@ div#show-image img {
 	max-height: 568px;
 	position: relative;
 	display: block;
-	margin-top: 10px
+	margin:0 auto;
+	padding-top: 18px;
 }
 
 div.name {

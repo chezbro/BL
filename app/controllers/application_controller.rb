@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   helper_method :signed_in?
   helper_method :current_user
 
+
   def signed_in?
   	return session[:user_id].present?
   end
@@ -11,5 +12,7 @@ class ApplicationController < ActionController::Base
   def current_user
   	 return User.find_by_id(session[:user_id])
   end
+
+
 
 end
